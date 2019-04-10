@@ -1,7 +1,7 @@
 # OSX
 #
 .DS_Store
-
+/src/FirebaseInfo.js
 # Xcode
 #
 build/
