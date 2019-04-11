@@ -9,7 +9,7 @@ import reducers from '../reducers'
 import { FirebaseInfo } from '../FirebaseInfo.js'
 import LoginForm  from './common/LoginForm'
 import { Header } from './common'
-
+import Router from '../Router'
 
 export default class App extends Component {
 
@@ -21,10 +21,7 @@ componentWillMount(){
   render() {
     return (
       <Provider store={createStore(reducers, {}, applyMiddleware(ReduxThunk))}>
-        <View style={{flex: 1}}>
-        <Header headerText="HEllo WOrld"/>
-        <LoginForm />
-        </View>
+        <Router />
       </Provider>
     );
   }

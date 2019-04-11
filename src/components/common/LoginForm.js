@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {View, Text} from 'react-native'
 import { emailChanged, passwordChanged, loginUser } from '../../actions'
 import { connect } from "react-redux"
-import { Card, CardItem, ForumInput, Button, Spinner } from '../common'
+import { Card, CardItem, FormInput, Button, Spinner } from '../common'
 
 class LoginForm extends Component {
 
@@ -43,11 +43,11 @@ class LoginForm extends Component {
     return(
       <Card>
         <CardItem>
-          <ForumInput label="Email:" placeholder="email@gmail.com" onChangeText={this.onEmailChange} value={this.props.email}/>
+          <FormInput label="Email:" placeholder="email@gmail.com" onChangeText={this.onEmailChange} value={this.props.email}/>
         </CardItem>
 
         <CardItem>
-          <ForumInput label="Password:" placeholder="password" secureTextEntry onChangeText={this.onPasswordChange} value={this.props.password}/>
+          <FormInput label="Password:" placeholder="password" secureTextEntry onChangeText={this.onPasswordChange} value={this.props.password}/>
         </CardItem>
 
         {this.displayError()}

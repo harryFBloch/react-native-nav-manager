@@ -1,7 +1,7 @@
 import React from 'react'
 import { TextInput, View, Text} from 'react-native'
 
-const ForumInput = ({ value, onChangeText, label, placeholder, secureTextEntry}) => {
+const FormInput = ({ value, onChangeText, label, placeholder, secureTextEntry}) => {
   const {inputStyle, labelStyle, containerStyle} = styles
   return(
     <View style={containerStyle}>
@@ -12,7 +12,7 @@ const ForumInput = ({ value, onChangeText, label, placeholder, secureTextEntry})
     </View>
   )
 }
-export { ForumInput }
+export { FormInput }
 
 
 const styles = {
